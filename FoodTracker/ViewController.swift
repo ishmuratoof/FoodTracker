@@ -32,7 +32,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     //MARK: Actions
     @IBAction func setDefaultLabelText(_ sender: UIButton) {
-        mealNameLable.text = "default text"
+        mealNameLable.text = "Default text"
     }
 }
 
