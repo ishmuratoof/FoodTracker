@@ -15,18 +15,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="uqa-mN-co3">
-                                <rect key="frame" x="20" y="142" width="335" height="336"/>
-                                <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="uqa-mN-co3" secondAttribute="height" multiplier="1:1" id="zS9-1O-CWm"/>
-                                </constraints>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="34Q-f1-jWE" appends="YES" id="Ffk-Zo-t2W"/>
-                                </connections>
-                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="pEX-e5-a41">
-                                <rect key="frame" x="20" y="20" width="335" height="102.5"/>
+                                <rect key="frame" x="20" y="20" width="335" height="431.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQg-D5-F0v">
                                         <rect key="frame" x="0.0" y="0.0" width="86.5" height="20.5"/>
@@ -46,20 +36,27 @@
                                             <action selector="setDefaultLabelText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ab1-4r-Ho0"/>
                                         </connections>
                                     </button>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="uqa-mN-co3">
+                                        <rect key="frame" x="0.0" y="111.5" width="320" height="320"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="uqa-mN-co3" secondAttribute="height" multiplier="1:1" id="d0l-Gl-qC9"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="34Q-f1-jWE" appends="YES" id="Ffk-Zo-t2W"/>
+                                        </connections>
+                                    </imageView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="uUz-Ri-vJl" secondAttribute="trailing" id="Nzc-Zy-z8V"/>
+                                    <constraint firstAttribute="trailing" secondItem="uUz-Ri-vJl" secondAttribute="trailing" id="ZiO-ty-66m"/>
                                 </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uqa-mN-co3" secondAttribute="trailing" constant="20" id="MTG-OW-hIj"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pEX-e5-a41" secondAttribute="trailing" constant="20" id="Nr0-Zw-TyO"/>
-                            <constraint firstItem="pEX-e5-a41" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Ofb-mw-Ulv"/>
-                            <constraint firstItem="uqa-mN-co3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="R70-2F-PfP"/>
-                            <constraint firstItem="uqa-mN-co3" firstAttribute="top" secondItem="pEX-e5-a41" secondAttribute="bottom" constant="20" id="ZXS-r4-3qe"/>
-                            <constraint firstItem="pEX-e5-a41" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="xWv-fu-b3W"/>
+                            <constraint firstItem="pEX-e5-a41" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="1xY-yj-AUe"/>
+                            <constraint firstItem="pEX-e5-a41" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Wfx-iz-jFb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pEX-e5-a41" secondAttribute="trailing" constant="20" id="jo6-bR-3jj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
