@@ -13,8 +13,8 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
     //MARK: Properties
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var mealNameLable: UILabel!
-    @IBOutlet weak var photoImageView: UIImageView!
-    let resetImage = UIImage.init(named: "defaultPhoto")
+//    @IBOutlet weak var photoImageView: UIImageView!
+    @IBOutlet var photoImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,28 +51,18 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
     }
     
     //MARK: Actions
-    @IBAction func reset(_ sender: UIButton) {
-        mealNameLable.text = "Meal Name"
- //       photoImageView = UIImageView
-    }
-    @IBAction func setDefaultLabelText(_ sender: UIButton) {
-        mealNameLable.text = "Default text"
-    }
     @IBAction func selectImageFromPhotoLibrary(_ sender: UIButton) {
-         //Hide the keyboard
-        nameTextField.resignFirstResponder()
-        let imagePickerController = UIImagePickerController()
-        imagePickerController.sourceType = .photoLibrary
-        imagePickerController.delegate = self
-        present(imagePickerController, animated: true, completion: nil)
+           //Hide the keyboard
+           nameTextField.resignFirstResponder()
+           let imagePickerController = UIImagePickerController()
+           imagePickerController.sourceType = .photoLibrary
+           imagePickerController.delegate = self
+           present(imagePickerController, animated: true, completion: nil)
+       }
+    
+    @IBAction func setDefaultLabelText(_ sender: UIButton) {
+        mealNameLable.text = "Meal Name"
+        photoImageView.image = #imageLiteral(resourceName: "defaultPhoto")
     }
-//    @IBAction func selectImageFromPhotoLibrary(_ sender: UITapGestureRecognizer) {
-//        //Hide the keyboard
-//        nameTextField.resignFirstResponder()
-//        let imagePickerController = UIImagePickerController()
-//        imagePickerController.sourceType = .photoLibrary
-//        imagePickerController.delegate = self
-//        present(imagePickerController, animated: true, completion: nil)
-//    }
 }
 
