@@ -50,6 +50,10 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
     }
     
     //MARK: Actions
+    @IBAction func reset(_ sender: UIButton) {
+        mealNameLable.text = "Meal name"
+        photoImageView = nil
+    }
     @IBAction func setDefaultLabelText(_ sender: UIButton) {
         mealNameLable.text = "Default text"
     }
