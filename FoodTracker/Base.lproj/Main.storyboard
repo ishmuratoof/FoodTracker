@@ -15,8 +15,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="top" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="pEX-e5-a41">
-                                <rect key="frame" x="20" y="20" width="335" height="599"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="pEX-e5-a41">
+                                <rect key="frame" x="20" y="20" width="335" height="533"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQg-D5-F0v">
                                         <rect key="frame" x="0.0" y="0.0" width="130.5" height="30"/>
@@ -51,8 +51,8 @@
                                         </constraints>
                                         <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                     </imageView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rGM-k6-gfq" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="489" width="200" height="110"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="rGM-k6-gfq" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="489" width="252" height="44"/>
                                     </stackView>
                                 </subviews>
                                 <constraints>
@@ -72,11 +72,12 @@
                         <outlet property="mealNameLable" destination="xQg-D5-F0v" id="uun-TF-7SU"/>
                         <outlet property="nameTextField" destination="uUz-Ri-vJl" id="Zcc-Wx-Ill"/>
                         <outlet property="photoImageView" destination="uqa-mN-co3" id="Vj2-t0-k0U"/>
+                        <outlet property="ratingControl" destination="rGM-k6-gfq" id="GHE-TY-Qr0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="112.5"/>
+            <point key="canvasLocation" x="136.80000000000001" y="111.99400299850076"/>
         </scene>
     </scenes>
     <resources>

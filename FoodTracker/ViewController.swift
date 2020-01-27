@@ -13,8 +13,8 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
     //MARK: Properties
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var mealNameLable: UILabel!
-//    @IBOutlet weak var photoImageView: UIImageView!
-    @IBOutlet var photoImageView: UIImageView!
+    @IBOutlet weak var photoImageView: UIImageView!
+    @IBOutlet var ratingControl: RatingControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
