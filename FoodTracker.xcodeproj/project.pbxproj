@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8E257C9123E204CD00CDD196 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E257C9023E204CD00CDD196 /* Meal.swift */; };
 		8E77344023DE078F002F7143 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E77343F23DE078F002F7143 /* RatingControl.swift */; };
+		8EDE43E823E35FFB006FD231 /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDE43E723E35FFB006FD231 /* MealTableViewCell.swift */; };
 		8EE3A37823D629ED00E0912D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE3A37723D629ED00E0912D /* AppDelegate.swift */; };
 		8EE3A37A23D629ED00E0912D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE3A37923D629ED00E0912D /* SceneDelegate.swift */; };
 		8EE3A37C23D629ED00E0912D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE3A37B23D629ED00E0912D /* ViewController.swift */; };
@@ -31,6 +32,7 @@
 /* Begin PBXFileReference section */
 		8E257C9023E204CD00CDD196 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		8E77343F23DE078F002F7143 /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
+		8EDE43E723E35FFB006FD231 /* MealTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableViewCell.swift; sourceTree = "<group>"; };
 		8EE3A37423D629ED00E0912D /* FoodTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EE3A37723D629ED00E0912D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8EE3A37923D629ED00E0912D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				8E77343F23DE078F002F7143 /* RatingControl.swift */,
 				8E257C9023E204CD00CDD196 /* Meal.swift */,
 				8EE3A37D23D629ED00E0912D /* Main.storyboard */,
+				8EDE43E723E35FFB006FD231 /* MealTableViewCell.swift */,
 				8EE3A38023D629F000E0912D /* Assets.xcassets */,
 				8EE3A38223D629F000E0912D /* LaunchScreen.storyboard */,
 				8EE3A38523D629F000E0912D /* Info.plist */,
@@ -208,6 +211,7 @@
 			files = (
 				8E257C9123E204CD00CDD196 /* Meal.swift in Sources */,
 				8E77344023DE078F002F7143 /* RatingControl.swift in Sources */,
+				8EDE43E823E35FFB006FD231 /* MealTableViewCell.swift in Sources */,
 				8EE3A37C23D629ED00E0912D /* ViewController.swift in Sources */,
 				8EE3A37823D629ED00E0912D /* AppDelegate.swift in Sources */,
 				8EE3A37A23D629ED00E0912D /* SceneDelegate.swift in Sources */,
